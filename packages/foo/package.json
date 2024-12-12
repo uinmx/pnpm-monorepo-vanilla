@@ -1,0 +1,18 @@
+{
+    "name": "@prefix/foo",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@prefix/bar": "link:D:/M-Pr/pnpm-monorepo-vanilla/packages/bar",
+        "@prefix/utils": "workspace:^",
+        "lodash": "^3.0.0"
+    }
+}

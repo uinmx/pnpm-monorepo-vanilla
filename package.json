@@ -1,0 +1,33 @@
+{
+    "name": "pnpm-monorepo",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Norush",
+    "license": "MIT",
+    "packageManager": "pnpm@9.15.0",
+    "type": "module",
+    "engines": {
+        "node": "^18.12.0 || ^20.0.0 || >=22.0.0"
+    },
+    "keywords": [
+        "pnpm",
+        "monorepo",
+        "example"
+    ],
+    "scripts": {
+        "test": "node --trace-deprecation main.js",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@prefix/bar": "workspace:^",
+        "@prefix/foo": "workspace:^",
+        "vite": "^6.0.3"
+    },
+    "pnpm": {
+        "overrides": {
+            "lodash": "4.17.21"
+        }
+    }
+}
